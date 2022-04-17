@@ -1,0 +1,50 @@
+@media screen and (min-width:650px) and (max-width:799px) {
+    .block_1 {
+        flex-basis: 49%;
+        margin-bottom: 2em;
+    }
+    .block_3 {
+        flex-basis: 100%;
+    }
+    a {
+        margin-left: 0.5em;
+        font-size: medium;
+    }
+    .company {
+        display: none;
+    }
+    .page {
+        left: 0;
+        padding-left: 3em;
+        padding-right: 2em;
+    }
+    .burger_menu {
+        display: block;
+        z-index: 11;
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+    #tabs {
+        /* visibility: hidden; */
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        transition: all 0.1s;
+    }
+    input#bm:checked~#tabs {
+        visibility: visible;
+        z-index: 12;
+        padding-top: 0;
+        margin-top: 3em;
+        width: 180px;
+        height: auto;
+    }
+    input#bm {
+        opacity: 0;
+    }
+}
+
+a {
+    font-size: small;
+}
