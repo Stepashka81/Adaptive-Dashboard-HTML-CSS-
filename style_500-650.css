@@ -1,0 +1,90 @@
+@media screen and (max-width:649px) {
+    .page {
+        left: 0;
+        padding-left: 3em;
+        padding-right: 2em;
+    }
+    .burger_menu {
+        display: block;
+        z-index: 11;
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+    #tabs {
+        /* visibility: hidden; */
+        height: 0;
+        width: 0;
+        overflow: hidden;
+        transition: all 0.1s;
+    }
+    input#bm:checked~#tabs {
+        visibility: visible;
+        z-index: 12;
+        padding-top: 0;
+        margin-top: 3em;
+        width: 180px;
+        height: auto;
+    }
+    input#bm {
+        opacity: 0;
+    }
+    .data {
+        justify-content: center;
+    }
+    .block_1 {
+        flex-basis: 47%;
+        margin-bottom: 2em;
+    }
+    .block_2,
+    .block_3 {
+        flex-basis: 100%;
+        margin-bottom: 2em;
+    }
+    .data_3_img {
+        width: 90%;
+        height: 20%;
+        padding: 10px 2px 5px 2px;
+        position: absolute;
+        top: -10px;
+        left: 5%;
+        color: white;
+        font-size: smaller;
+    }
+    .data_3_img>form {
+        padding-left: 0.5em;
+    }
+    .footer,
+    .footerlink {
+        font-size: smaller;
+    }
+    a {
+        font-size: smaller;
+        margin-left: 0.5em;
+    }
+    input[id=comp],
+    input[id=us_name],
+    input[id=mail],
+    input[id=city],
+    input[id=coutry],
+    input[id=index] {
+        width: 300px;
+    }
+    input[id=f_name],
+    input[id=l_name] {
+        width: 300px;
+    }
+    input[id=adress] {
+        width: 300px;
+    }
+    .input_block {
+        display: block;
+    }
+    .input_button_hidden {
+        display: none;
+    }
+    input[id=btn] {
+        margin-top: 1em;
+        z-index: auto;
+    }
+}
